@@ -37,6 +37,8 @@ build:
 
     # A step that executes `pip install` command.
     #- pip-install
+    python manage.py makemigrations blog
+    python manage.py migrate blog
 
     # # This pip-install clears the local wheel cache
     # - pip-install:
